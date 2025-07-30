@@ -1,0 +1,85 @@
+.mainContainer {
+  margin-top: 2rem;        /* Margen respecto al panel de botones */
+  margin-left: 1rem;       /* Margen izquierdo */
+  margin-right: 26vw;      /* Ajustado para quedar a ~10px del borde de la foto */
+  margin-bottom: 2rem;
+  width: auto;
+  max-width: 50vw;         /* Limitar el ancho máximo */
+}
+
+.cuadroContenido {
+  background: transparent;              /* Fondo transparente */
+  border: 4px solid #2EC6F5;          /* Borde azul más grueso */
+  border-radius: 16px;
+  padding: 2rem;
+  color: #1a1f3a;                      /* Texto oscuro para contraste */
+  line-height: 1.6;
+}
+
+.cuadroContenido h2 {
+  color: #2EC6F5;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cuadroContenido h3 {
+  color: #C08CFF;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.cuadroContenido p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #1a1f3a;                      /* Texto oscuro */
+}
+
+.cuadroContenido ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cuadroContenido li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  color: #1a1f3a;                      /* Texto oscuro */
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.cuadroContenido li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  color: #2EC6F5;
+  font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .mainContainer {
+    margin-right: 32vw;      /* Ajustado proporcionalmente */
+    max-width: 60vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .mainContainer {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    max-width: 95vw;
+  }
+  
+  .cuadroContenido {
+    padding: 1.5rem;
+  }
+  
+  .cuadroContenido h2 {
+    font-size: 1.6rem;
+  }
+}

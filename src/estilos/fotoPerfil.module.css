@@ -1,0 +1,33 @@
+.fotoPerfilContainer {
+  position: fixed;
+  top: 6rem;           /* Más abajo que antes (era 2rem) */
+  right: 1rem;         /* Pegado al borde derecho */
+  left: unset;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;        /* Ocupa la mitad de la altura de la pantalla */
+  justify-content: center;
+}
+
+.fotoPerfilBg {
+  background: linear-gradient(135deg, #c08cff 0%, #2ec6f5 100%);
+  border-radius: 50%;
+  padding: 2vw;        /* Padding proporcional al tamaño */
+  box-shadow: 0 8px 32px #c08cff44, 0 0 0 12px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.fotoPerfilImg {
+  width: 250vw;         /* Más grande que antes (era 200vw) */
+  height: 500vh;        /* Más grande que antes (era 400vh) */
+  max-width: 450px;     /* Más grande que antes (era 350px) */
+  max-height: 90vh;
+  object-fit: cover;
+  border-radius: 50%;   /* Mantiene el borde circular */
+  box-shadow: 0 4px 16px #0002;
+}

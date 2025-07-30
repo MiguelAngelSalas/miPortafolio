@@ -1,0 +1,94 @@
+.pasarelaContainer {
+  width: 100%;
+  max-width: 100%;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.botonNav {
+  background: #2EC6F5;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.botonNav:hover {
+  background: #1a9bd1;
+}
+
+.contador {
+  color: #2EC6F5;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.proyectoCard {
+  text-align: center;
+  width: 100%;
+}
+
+.titulo {
+  color: #2EC6F5;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.imagenContainer {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 12px;
+  border: 3px solid #2EC6F5;
+  object-fit: cover;
+}
+
+.tecnologias {
+  color: #C08CFF;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.descripcion {
+  color: #1a1f3a;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.botones {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.botonLink {
+  color: #2EC6F5;
+  text-decoration: none;
+  border: 2px solid #2EC6F5;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.botonLink:hover {
+  background: #2EC6F5;
+  color: white;
+}
