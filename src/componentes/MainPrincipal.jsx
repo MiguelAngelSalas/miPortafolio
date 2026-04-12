@@ -16,57 +16,62 @@ const MainPrincipal = ({ seccion = "sobremi" }) => (
       
       {seccion === "sobremi" && (
         <div>
-          <p>¡Hola! Soy <strong>Miguel Ángel Salas</strong>, tengo 30 años y soy un Programador Junior especializado en <strong>Frontend</strong>.</p>
+          <p>¡Hola! Soy <strong>Miguel Ángel Salas</strong>, estudiante de 3er año de la Tecnicatura en Programación y <strong>Desarrollador Full Stack Junior</strong>.</p>
           
-          <p>Tengo una sólida experiencia en atención al cliente y manejo de herramientas informáticas, adquirida durante varios años trabajando en entornos de ciber, donde me especialicé en trámites online, redacción y digitalización de documentos.</p>
+          <p>Cuento con experiencia comprobable en <strong>Soporte IT y Atención al Cliente</strong>, gestionando requerimientos técnicos, creación de cuentas y resolución de problemas para usuarios finales en tiempo real.</p>
           
-          <p>Actualmente me estoy formando como programador con conocimientos en <strong>React, Python y Node.js</strong>, orientado a soluciones prácticas como automatización de tareas, desarrollo web y manejo de bases de datos locales.</p>
+          <p>En el ámbito del desarrollo, me especializo en la creación de aplicaciones web modernas y plataformas SaaS. Actualmente construyo soluciones escalables utilizando el ecosistema de <strong>React, Next.js y Tailwind CSS</strong> en el Frontend, respaldado por bases de datos relacionales como <strong>PostgreSQL</strong> mediante Prisma ORM.</p>
           
-          <p>Me destaco por mi capacidad de aprendizaje, autonomía y atención al detalle. Tengo una fuerte orientación a resolver problemas de forma eficiente y busco crecer en un entorno donde pueda combinar mi experiencia en informática aplicada con el desarrollo de software.</p>
+          <p>Me destaco por mi capacidad de aprendizaje rápido, mi autonomía para resolver bugs complejos y la integración de herramientas de Inteligencia Artificial para acelerar y optimizar los flujos de desarrollo.</p>
           
-          <div>
+          <div className={estilos.formacionBox}>
             <h3>Formación:</h3>
-            <p>📚 <strong>Tecnicatura en Programación</strong> - UnAB (2024-2025)</p>
-            <p>💻 <strong>Curso de POO</strong> - HTML, CSS y JavaScript (2023)</p>
-            <p>🎓 <strong>Título Secundario</strong> - CENS 454, Lomas de Zamora (2013-2016)</p>
+            <p>📚 <strong>Tecnicatura Universitaria en Programación</strong> - UNaB (En curso - 3er año)</p>
+            <p>💻 <strong>Desarrollo Web Full Stack & Bases de Datos</strong> - Autodidacta / Proyectos Prácticos</p>
+            <p>🎓 <strong>Título Secundario</strong> - CENS 454, Lomas de Zamora</p>
           </div>
         </div>
       )}
       
       {seccion === "proyectos" && (
         <div>
-          <p>Aquí puedes ver algunos de mis proyectos más destacados:</p>
+          <p>He diseñado, desarrollado y desplegado en producción aplicaciones full-stack, destacando plataformas como <strong>Clipp.com.ar</strong> (SaaS para gestión de barberías) y <strong>Multi-Foto</strong> (herramienta de procesamiento de imágenes).</p>
+          <p>Aquí puedes explorar mi trabajo:</p>
           <PasarelaProyectos />
         </div>
       )}
       
       {seccion === "tecnologias" && (
         <div>
-          <p>Estas son las tecnologías que manejo:</p>
+          <p>Evoluciono constantemente mi stack para adaptarme a los estándares actuales de la industria:</p>
+          
           <div>
-            <h3>Frontend:</h3>
-            <p>React, JavaScript, HTML5, CSS3, Vite</p>
+            <h3>🚀 Frontend & UI:</h3>
+            <p>Next.js, React, TypeScript, JavaScript, Tailwind CSS, HTML5, CSS3</p>
             
-            <h3>Backend:</h3>
-            <p>Node.js, Express, APIs REST</p>
+            <h3>⚙️ Backend & Base de Datos:</h3>
+            <p>PostgreSQL, Prisma ORM, Neon DB, Node.js, NextAuth / JWT (bcrypt)</p>
             
-            <h3>Herramientas:</h3>
-            <p>Git, GitHub, VSCode, npm</p>
+            <h3>🐍 Automatización & Scripting:</h3>
+            <p>Python, Selenium, BeautifulSoup (Web Scraping)</p>
+            
+            <h3>🛠️ Herramientas & DevOps:</h3>
+            <p>Git, GitHub, Vercel, Integración de APIs de IA</p>
           </div>
         </div>
       )}
       
       {seccion === "contacto" && (
         <div>
-          <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+          <p>¿Tienes un proyecto en mente o buscas sumar un Junior con empuje a tu equipo? ¡Hablemos!</p>
           <div>
             <p>📧 Email: miguelsalas1994@outlook.com</p>
             <p>💼 LinkedIn: /Miguel-Angel-salas</p>
-            <p>🐙 GitHub: /miguelangelsalas</p>
+            <p>🐙 GitHub: /MiguelAngelSalas</p>
             <p>📱 Teléfono: 1123909529</p>
-            <p>📍 Temperley, Buenos Aires</p>
+            <p>📍 Lomas de Zamora, Buenos Aires</p>
           </div>
-          <p>Estoy disponible para proyectos freelance y oportunidades laborales.</p>
+          <p>Estoy disponible para oportunidades laborales y desarrollo de proyectos freelance.</p>
         </div>
       )}
     </section>

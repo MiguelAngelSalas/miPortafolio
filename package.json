@@ -1,9 +1,20 @@
 {
   "name": "mi-portfolio",
-  "private": true,
-  "homepage": "https://github.com/MiguelAngelSalas/miPortafolio",
   "version": "0.0.0",
+  "private": true,
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "homepage": "https://github.com/MiguelAngelSalas/miPortafolio",
+  "bugs": {
+    "url": "https://github.com/MiguelAngelSalas/miPortafolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelAngelSalas/miPortafolio.git"
+  },
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "eslint.config.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

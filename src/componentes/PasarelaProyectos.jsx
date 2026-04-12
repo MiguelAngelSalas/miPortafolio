@@ -5,30 +5,30 @@ const PasarelaProyectos = () => {
   const proyectos = [
     {
       id: 1,
-      titulo: "Sistema de Gestión de Turnos",
-      descripcion: "Sistema completo de gestión de turnos médicos con interfaz de administrador, estadísticas por localidad, registro de usuarios y base de datos SQLite. Incluye dashboard administrativo, formularios de registro y sistema de autenticación.",
-      tecnologias: "Python • Tkinter • SQLite • Pandas • Matplotlib",
-      imagen: "/src/assets/gestion-turnos/bienvenida.png",
-      github: "https://github.com/miguelangelsalas/Grupo-6---Pandas-main",
-      demo: "#"
+      titulo: "CLIPP // Gestión de Turnos y Cobros",
+      descripcion: "Sistema integral SaaS para barberías y centros médicos. Incluye dashboard administrativo, gestion de cobros, gestión de staff y sistema de turnos dinámico con validación.",
+      tecnologias: "Next.js • PostgreSQL • Prisma ORM • Auth.js • Neon DB • Resend API • Despliegue en Vercel",
+      imagen: "/gestion-turnos/Dashboard.png",
+      github: "https://github.com/MiguelAngelSalas/clipp",
+      demo: "https://clipp.com.ar"
     },
     {
       id: 2,
-      titulo: "Portfolio Personal",
-      descripcion: "Sitio web personal desarrollado con React y CSS Modules",
-      tecnologias: "React • CSS Modules • Vite",
-      imagen: "/src/assets/ejemplo.jpeg",
-      github: "#",
-      demo: "#"
+      titulo: "MULTI-FOTO // Procesamiento con IA",
+      descripcion: "Herramienta desarrollada para facilitar la creación de PDFs imprimibles. Incluye integración con IA para remover fondos (PNG) sin perder calidad. Ideal para stickers y fotos 4x4.",
+      tecnologias: "Next.js • React-Cropper.",
+      imagen: "/multi-foto/multifoto.png",
+      github: "https://github.com/MiguelAngelSalas/multifoto",
+      demo: "https://multifoto.vercel.app/",
     },
     {
       id: 3,
-      titulo: "App de Tareas",
-      descripcion: "Aplicación para gestionar tareas diarias con interfaz intuitiva",
-      tecnologias: "JavaScript • HTML5 • CSS3",
-      imagen: "/src/assets/ejemplo.jpeg",
-      github: "#",
-      demo: "#"
+      titulo: "IMPRESIONES A TU CASA // E-commerce",
+      descripcion: "Aplicación de logística de impresión. Los clientes gestionan su carrito, eligen tipo de papel y envían pedidos. Los archivos PDF se procesan en Cloudinary para una gestión rápida de la compra.",
+      tecnologias: "React + Vite • Cloudinary • Node.js • Desplegado en Vercel.",
+      imagen: "/impresionesATuCasa/dashboard.png",
+      github: "https://github.com/MiguelAngelSalas/impresionesatucasa",
+      demo: "https://impresionesatucasa.com.ar",
     }
   ];
 
@@ -46,6 +46,7 @@ const PasarelaProyectos = () => {
 
   return (
     <div className={estilos.pasarelaContainer}>
+      {/* Navegación superior: Flechas y contador */}
       <div className={estilos.navegacion}>
         <button onClick={proyectoAnterior} className={estilos.botonNav}>
           ← Anterior
@@ -58,6 +59,7 @@ const PasarelaProyectos = () => {
         </button>
       </div>
 
+      {/* Card del proyecto actual */}
       <div className={estilos.proyectoCard}>
         <h3 className={estilos.titulo}>{proyecto.titulo}</h3>
         
@@ -74,8 +76,22 @@ const PasarelaProyectos = () => {
         <p className={estilos.descripcion}>{proyecto.descripcion}</p>
         
         <div className={estilos.botones}>
-          <a href={proyecto.github} className={estilos.botonLink}>GitHub</a>
-          <a href={proyecto.demo} className={estilos.botonLink}>Ver Demo</a>
+          <a 
+            href={proyecto.github} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className={estilos.botonLink}
+          >
+            GitHub
+          </a>
+          <a 
+            href={proyecto.demo} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className={estilos.botonLink}
+          >
+            Ver Demo
+          </a>
         </div>
       </div>
     </div>
